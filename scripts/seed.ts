@@ -11,6 +11,8 @@ async function main() {
                 { name: "Fitness" },
                 { name: "Photography" },
                 { name: "Accounting" },
+                { name: "Filming" },
+                { name: "Engineering" },
             ]
         });
         console.log("Success");
