@@ -14,7 +14,7 @@ export async function POST(
     if (!user || !user.id || !user.emailAddresses?.[0].emailAddress) {
       return new NextResponse("Unauthorized", { status: 401 });
     }
-
+    
     const course = await db.course.findUnique({
       where: {
         id: params.courseId,
